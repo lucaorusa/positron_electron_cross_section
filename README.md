@@ -6,6 +6,5 @@ The following columns contain the energy differential cross  sections of various
 These are total cross section, i.e. including all the possible contributions.
 In 'supplementary_table_positrons_best_fit.dat' are contained the energy differential cross section of positrons, in 
 'supplementary_table_positrons_upper_band.dat' is contained the upper 1-sigma uncertainty band, and in 'supplementary_table_positrons_lower_band.dat' is
-contained the lower 1-sigma uncertainty band. To read all these tables is sufficient to use the python script 'script_supplementary.py'. Details of its usage 
-are reported in the script.
+contained the lower 1-sigma uncertainty band. The same rules apply for electrons. To read all these tables is sufficient to use the python script 'script_supplementary.py'. Details of its usage are reported in the script.
 If you use these tables or the script, please cite the paper.
