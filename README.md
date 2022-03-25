@@ -1,4 +1,8 @@
 # positron_electron_cross_section
+New determination of the production cross section for secondary positrons and electrons in the Galaxy
+Luca Orusa, Mattia Di Mauro, Fiorenza Donato, Michael Korsmeier
+arXiv:2203.13143 
+
 In this repository are contained the tables with the energy differential cross section d\sigma_{ij}/dT of positrons and electrons for cosmic-ray (CR) 
 component i and interstellar medium (ISM) component j. Here j are protons (Z=1,A=1) and Helium (Z=2,A=4). The first column of each file contains the 
 kinetic energy per nucleon of the incident CR T_{projectile} and the second column the kinetic energy of the positron or electron T_{e}, both in GeV. 
