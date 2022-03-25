@@ -9,7 +9,7 @@
 #    
 #          Luca Orusa, Mattia Di Mauro, Fiorenza Donato, and Michael Korsmeier    
 #         *-------------------------------------------------------------------*    
-#    
+#          arXiv:2203.13143 
 #          IF YOU USE THIS SCRIPT, PLEASE CITE THE PAPER.    
 #    
 #    
