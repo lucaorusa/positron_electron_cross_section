@@ -9,15 +9,20 @@
 #    
 #          Luca Orusa, Mattia Di Mauro, Fiorenza Donato, and Michael Korsmeier    
 #         *-------------------------------------------------------------------*    
-#          arXiv:2203.13143 
-#          IF YOU USE THIS SCRIPT, PLEASE CITE THE PAPER.    
+#                    Published in: Phys. Rev. D 105, 123021    
+#                    arXiv:        2203.13143 [astro-ph.HE]    
+#
+#          IF YOU USE THIS TABLE, PLEASE CITE THE ABOVE PAPER.    
+#          Please acknowledge the use of these tables by citing the paper: Phys. Rev. D 105, 123021(2203.13143)
+#          If you want to add these tables to a public code,   
+#          please add the readme file available at this link(https://github.com/lucaorusa/positron_electron_cross_section)   
+#          to the folder where the tables are located.    
 #    
 #    
-#          We provide the script to read the Final_table+.dat and  Final_table-.dat 
-#          files that contain energy differential cross section $d\sigma_{ij}/dT$    
+#          We provide the script to read the tables available at this link https://github.com/lucaorusa/positron_electron_cross_section
+#          that contain energy differential cross section $d\sigma_{ij}/dT$ of electrons and positrons    
 #          for cosmic-ray (CR) component i and intersellar medium (ISM)    
 #          component j. The energy differential cross  sections are in units of mb/GeV.
-
 
 
 
@@ -114,7 +119,9 @@ def particle_cross_section(T_e,T_p,particle,request,projectile_nuclei,target_nuc
       index=19
 
     projectile_kinetic_energy=np.logspace(np.log10(0.1), np.log10(100000),120)
+    projectile_kinetic_energy=np.append(projectile_kinetic_energy,np.logspace(np.log10(110158.1938), np.log10(1e6),20))
     particle_kinetic_energy=np.logspace(np.log10(0.01), np.log10(10000),90)
+    
     cross_section=np.zeros((len(particle_kinetic_energy),len(projectile_kinetic_energy)))
     count=0
     for j in range(len(projectile_kinetic_energy)):
@@ -169,7 +176,7 @@ if(particle=='positron'):
 else:
    pl.ylabel(r'$ \frac{d \sigma}{d T_{e^-}}$ [mb/GeV]', fontsize=18)
    pl.xlabel(r'$T_{e^-}$ [GeV]', fontsize=18)
-pl.axis([1e-2,T_proton,1e-3,500])
+pl.axis([1e-2,min(1e4,T_proton),1e-3,500])
 pl.xticks(fontsize=18)
 pl.yticks(fontsize=18)
 pl.tick_params('both', length=7, width=2, which='major')
